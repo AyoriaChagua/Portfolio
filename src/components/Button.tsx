@@ -6,8 +6,8 @@ interface Props {
 
 function Button({ text, type = "primary", onClick }: Props) {
     const types = {
-        primary: "bg-red-500 text-gray-100 dark:text-red-100 hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-800 ",
-        secondary: "bg-red-800 text-gray-100 dark:text-red-100 hover:bg-red-600 text-gray-100  ",
+        primary: "bg-red-500 text-gray-100  dark:text-white hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-800 ",
+        secondary: "bg-red-800 text-gray-100 dark:text-white hover:bg-red-600  dark:bg-red-800 dark:hover:bg-red-600",
         chgMode: "dark:bg-black bg-white  dark:hover:bg-red-900 dark:hover:text-red-100 hover:bg-red-400 "
     }
 

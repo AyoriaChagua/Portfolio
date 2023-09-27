@@ -17,7 +17,7 @@ export default function NotFound() {
 
         })
         return () => anim.destroy();
-    }, [])
+    }, [animationContainer])
 
     return (
         <div className="flex w-full h-screen justify-center items-center flex-col">
