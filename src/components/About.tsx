@@ -1,5 +1,6 @@
 import Section from "@/layouts/Section"
 import Tools from "@/components/Tools"
+import { tools } from "@/mockData/tools"
 
 function About() {
     return (
@@ -13,7 +14,7 @@ function About() {
                     </p>
                 </div>
             </Section>
-            <Tools />
+            <Tools toolsItems={tools}/>
         </div>
     )
 }
