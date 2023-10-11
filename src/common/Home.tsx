@@ -8,10 +8,12 @@ import { projects } from "@/mockData/projects"
 import skill from "@/../public/images/introduce/skills.png"
 import Projects from "@/components/Projects"
 import About from "@/components/About"
+import '../app/globals.css'
 
 function Home() {
     return (
         <div>
+            
             <Section id="profile">
                 <ProfileHeader />
             </Section>

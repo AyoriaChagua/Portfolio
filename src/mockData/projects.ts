@@ -1,14 +1,24 @@
 export const projectImages = {
+    nasaapp: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1697008738/projects/nasaapp_togh8i.png",
     monitorme: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235701/projects/Captura_de_pantalla_2023-09-20_133428_omfvyk.png",
     reunet: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235702/projects/Captura_de_pantalla_2023-09-20_133940_g8tvbz.png",
     auth: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235701/projects/Captura_de_pantalla_2023-09-20_133536_iaevls.png",
     todo: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235701/projects/Captura_de_pantalla_2023-09-20_133758_srzmgi.png",
     twiter: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235701/projects/gsmarena_001_oazh55.jpg",
-    sending: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235701/projects/How-to-Send-an-Email-in-Python-02_cmhtct.png"
+    sending: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1695235701/projects/How-to-Send-an-Email-in-Python-02_cmhtct.png",
+    noteapp: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1697011272/projects/noteapps_dfmwvs.png"
 } 
 
 
 export const projects = [
+    {
+        name: "Nasa pubblications",
+        resume: "App that consumes the NASA API",
+        description: "The “Latest NASA Publications” project is a mobile application developed in React Native that provides users with access to the latest and most exciting information from NASA. The app consumes data from NASA's public API and presents information about images, news, events and other resources available at the space agency.",
+        image: projectImages.nasaapp,
+        tools: ["React", "React Native", "React Navigation", "JavaScript", "CSS"],
+        gitlink: "https://github.com/AyoriaChagua/nasa-news-app"
+    },
     {
         name: "Monitor me",
         resume:"Application use control system for students of the Tecsup Digital Technology department",
@@ -44,7 +54,7 @@ export const projects = [
     {
         name: "Twiter Clon",
         resume:"A simple Twitter replica with some details added",
-        description: "With this Twitter clone we seek to explain both interactive and systematic operation. We sought to have the same interaction that we have with the application, which is now called X but it is still the same.",
+        description: "With this Twitter clone we seek to explain both interactive and systematic operation. We sought to have the same interaction that we have with the application, which is now called X but it is still the same with a dashboard.",
         image: projectImages.twiter,
         tools: ["Next JS", "React", "TypeScript", "Supabase", "Tailwind"],
         gitlink: "https://github.com/AyoriaChagua/crud-cloudinary"
@@ -56,5 +66,13 @@ export const projects = [
         image: projectImages.sending,
         tools: ["Python", "Pandas", "Outlook","HTML"],
         gitlink: "https://github.com/AyoriaChagua/diajo"
+    },
+    {
+        name: "Notes app",
+        resume:"A notes application, with an authentication system, using ssr.",
+        description: "This is one of the first largest projects I could have developed, since multiple concepts were used which were complicated for me at that time. Store procedure, rendering, template engines, data persistence, all these concepts are applied in a system which helps you manage your notes efficiently",
+        image: projectImages.noteapp,
+        tools: ["NodeJS", "Handlebars", "Bootstrap","JavaScript"],
+        gitlink: "https://github.com/AyoriaChagua/notes-page"
     }
 ]
